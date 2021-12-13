@@ -1,17 +1,134 @@
-<form>
-    <div>
+<div class="section_179_form">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Section 179 Tax Deduction</h3>
+        </div>
 
-    </div>
-    <div>
+        <div id="equip_cost" class="form-group bg-primary first-section">
+            <label for="line0" class="col-sm-6 control-label">Cost of Equipment</label>
+            <div class="col-sm-6 number">
+                <input type="number" class="form-control" id="line0" onkeyup="oc();">
+            </div>
+        </div>
+        <div id="calculations">
+            <div class="form-group">
+                <label for="line1" class="col-sm-8 control-label">Section 179 Deduction</label>
+                <div class="col-sm-4">
+                    <h2></h2>
+                </div>
+            </div>
 
-    </div>
-    <div>
+            <div class="form-group">
+                <label for="line4" class="col-sm-8 control-label">Total First Year Deduction</label>
+                <div class="col-sm-4">
+                    <h2></h2>
+                </div>
+            </div>
 
-    </div>
-    <div>
+            <hr>
 
-    </div>
-    <div>
+            <div id="savings" class="form-group">
+                <label for="line5" class="col-sm-8 control-label">
+                    Cash Savings on your Purchase
+                </label>
+                <p id="helpBlock" class="help-block">Assuming a 35% tax bracket</p>
 
+                <div class="col-sm-4">
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+        <div class="last-section">
+            <div id="final_cost" class="form-group bg-primary ">
+                <div id="cost" class="form-group">
+                    <label for="line6" class="col-sm-8 control-label">
+                        Lowered Cost of Equipment
+                    </label>
+                    <p id="helpBlock" class="help-block">After Tax Savings</p>
+                    <div class="col-sm-4">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</form>
+</div>
+
+
+<style>
+    hr {
+        width: 75%;
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+
+    .first-section {
+        padding: 5px 20px;
+
+    }
+
+    .last-section #cost {
+        background-color: red;
+        padding: 20px
+    }
+
+    #calculations {
+        padding: 20px;
+    }
+
+    .section_179_form {
+        width: 40%;
+
+    }
+
+    .panel {
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+        margin-bottom: 20px;
+        background-color: #fff;
+        border: 1px solid transparent
+    }
+
+    .panel-default {
+        border-color: #ddd
+    }
+
+    .panel-default>.panel-heading {
+        color: #333;
+        background-color: #f5f5f5;
+        border-color: #ddd
+    }
+
+    .panel-heading {
+        padding: 10px 15px;
+        border-bottom: 1px solid transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+
+    .panel-body {
+        padding: 15px;
+    }
+
+    div.lp-pom-root,
+    .cke-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .bg-primary {
+        color: #fff;
+        background-color: #337ab7
+    }
+
+    .form-horizontal .form-group {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+
+
+    .form-control {
+        display: inline-block;
+    }
+</style>
